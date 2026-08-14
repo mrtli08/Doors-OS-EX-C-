@@ -21,7 +21,7 @@ int main()
         }
         
         if (Ui == "version") {
-            std::cout<<"Doors OS C++ version: Prototyping";
+            std::cout<<"Doors OS C++ version: Prototyping \n";
         }
         
         if (Ui == "date") {
@@ -40,29 +40,36 @@ int main()
 		
         
 		if (Ui == "doors net") {
-            std::getline(std::cin,searchs);
-            if (searchs == "doors os") {
-                std::cout<<"Doors OS is an os that is based on scratch popular versions are: v24 , v29 ,\n";
-            }
-            if (searchs == "hi") {
-                std::cout<<"Hi is a phrase use to greet people\n";
-            }
+            while (true)
+            {
+                std::getline(std::cin,searchs);
+                if (searchs == "doors os") {
+                    std::cout<<"Doors OS is an os that is based on scratch popular versions are: v24 , v29 ,\n";
+                }
+                if (searchs == "hi") {
+                    std::cout<<"Hi is a phrase use to greet people\n";
+                }
+                    
+                if (searchs == "c++") {
+                    std::cout<<"C++ is a programing language used to code oses\n ";
+                    }
+
+                if (searchs == "doors net") {
+                    std::cout<<"Doors Net is a web browser made by Doors OS.co \n";
                 
-            if (searchs == "c++") {
-                std::cout<<"C++ is a programing language used to code oses\n ";
+                }
+                
+                if (searchs == "google") {
+                    std::cout<<"google is one of the worlds biggest and most used search engines \n";
                 }
 
-            if (searchs == "doors net") {
-                std::cout<<"Doors Net is a web browser made by Doors OS.co \n";
-            
+                if (searchs == "exit") {
+                    std::cout<<"Exited. \n";
+                    break;
+                }
             }
             
-            if (searchs == "google") {
-            	std::cout<<"google is one of the worlds biggest and most used search engines \n";
-			}
-            
-            
-            }
+        }
 		if (Ui == "shutdown") {
         	std::cout<<"Powered off...\n";
         	return(0);
@@ -74,6 +81,11 @@ int main()
     }
         return 0;	
     }
+       
+ 
+    
+    
+    
        
  
     
