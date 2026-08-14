@@ -17,7 +17,7 @@ int main()
         std::getline(std::cin, Ui);
         
         if (Ui == "help") {
-            std::cout<<"The commands / applications are: shutdown , help , version , date , Doors Net , guessing game \n";
+            std::cout<<"The commands / applications are: shutdown , help , version , date , doors net , guessing game \n";
         }
         
         if (Ui == "version") {
@@ -37,7 +37,7 @@ int main()
         		std::cout<<"try again you didnt guess right good guess!! \n";
 			}
 			}
-		}
+		
         
 		if (Ui == "doors net") {
             std::getline(std::cin,searchs);
@@ -63,15 +63,15 @@ int main()
             
             
             }
-			if (Ui == "shutdown") {
-            std::cout<<"Powered off...\n";
+		if (Ui == "shutdown") {
+        	std::cout<<"Powered off...\n";
         	return(0);
         	}
         
         	else if (Ui != "help" && Ui != "version" && Ui != "date" && Ui != "doors net" && Ui != "shutdown" ) {
 				std::cout<<"command not found did you mean help?\n";
         	}
-        	
+    }
         return 0;	
     }
        
